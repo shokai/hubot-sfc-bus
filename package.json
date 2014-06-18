@@ -1,6 +1,6 @@
 {
   "name": "hubot-sfc-bus",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "description": "Hubot script for Bus Schedule at SFC (Keio University).",
   "main": "scripts/sfc-bus.coffee",
