@@ -1,3 +1,7 @@
+=== 0.0.3 2014-06-19
+
+* parse hour option
+
 === 0.0.2 2014-06-18
 
 * fix package.json
