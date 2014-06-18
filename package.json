@@ -1,0 +1,24 @@
+{
+  "name": "hubot-sfc-bus",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Hubot script for Bus Schedule at SFC (Keio University).",
+  "main": "scripts/sfc-bus.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hubot",
+    "sfc",
+    "keio",
+    "bus"
+  ],
+  "author": "Sho Hashimoto <hashimoto@shokai.org>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^0.9.0",
+    "hubot": "^2.7.5",
+    "lodash": "^2.4.1",
+    "request": "^2.36.0"
+  }
+}
