@@ -2,6 +2,9 @@ hubot-bus-sfc
 =============
 Hubot script for Bus Schedule at SFC (Keio University).
 
+- https://github.com/shokai/hubot-bus-sfc
+- https://www.npmjs.org/package/hubot-bus-sfc
+
 
 Install
 -------
