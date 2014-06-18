@@ -11,17 +11,21 @@ Install
 
     % npm install hubot-sfc-bus -save
 
-### external-script.json
+
+### edit `external-script.json`
 
 ```json
 ["hubot-sfc-bus"]
 ```
 
 
-Use
----
+Usage
+-----
 
     hubot バス 湘南台
     hubot バス 辻堂 土曜 11時
 
     hubot (bus|バス) (湘南台|辻堂) (平日|土曜|休日) (\d時)
+
+
+![screen shot](http://gyazo.com/17dc05d6ee900ddef203d49b4bd1690a.png)
