@@ -1,3 +1,7 @@
+=== 0.0.2 2014-06-18
+
+* fix package.json
+
 === 0.0.1 2014-06-18
 
 * first release
