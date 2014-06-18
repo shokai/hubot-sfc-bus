@@ -16,9 +16,18 @@
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "license": "MIT",
   "dependencies": {
-    "async": "^0.9.0",
-    "hubot": "^2.7.5",
-    "lodash": "^2.4.1",
-    "request": "^2.36.0"
-  }
+    "async": "*",
+    "hubot": "*",
+    "lodash": "*",
+    "request": "*"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shokai/hubot-bus-sfc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shokai/hubot-bus-sfc/issues"
+  },
+  "homepage": "https://github.com/shokai/hubot-bus-sfc"
 }
