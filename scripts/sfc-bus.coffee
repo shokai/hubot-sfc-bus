@@ -49,7 +49,6 @@ getScheduleOfLines = (line, callback = ->) ->
       , 1000
   , (err, res) ->
     callback err, res
-  return
 
 
 ## 時刻表をスクレイピングで取得
