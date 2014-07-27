@@ -24,10 +24,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git://github.com/shokai/hubot-bus-sfc.git"
+    "url": "git://github.com/shokai/hubot-sfc-bus.git"
   },
   "bugs": {
-    "url": "https://github.com/shokai/hubot-bus-sfc/issues"
+    "url": "https://github.com/shokai/hubot-sfc-bus/issues"
   },
-  "homepage": "https://github.com/shokai/hubot-bus-sfc"
+  "homepage": "https://github.com/shokai/hubot-sfc-bus"
 }
