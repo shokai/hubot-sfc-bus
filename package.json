@@ -3,9 +3,9 @@
   "private": false,
   "version": "0.0.4",
   "description": "Hubot script for Bus Schedule at SFC (Keio University).",
-  "main": "scripts/sfc-bus.coffee",
+  "main": "scripts/hubot-sfc-bus.coffee",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "keywords": [
     "hubot",
@@ -17,11 +17,23 @@
   "license": "MIT",
   "dependencies": {
     "async": "*",
+    "debug": "*",
     "hubot": "*",
     "lodash": "*",
     "request": "*"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "coffee-errors": "*",
+    "coffee-script": "^1.8",
+    "coffeelint": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-coffeelint": "*",
+    "grunt-notify": "*",
+    "grunt-simple-mocha": "*",
+    "grunt-contrib-watch": "git+https://github.com/gruntjs/grunt-contrib-watch",
+    "mocha": "*"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/shokai/hubot-sfc-bus.git"
