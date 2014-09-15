@@ -6,7 +6,7 @@
 #   "cheerio:  "*"
 #   "request": "*"
 #   "async":   "*"
-# 
+#
 # Commands:
 #   hubot バス (湘南台|辻堂)
 #   hubot バス (湘南台|辻堂) (平日|土曜|休日) (\d時)
@@ -24,6 +24,8 @@ STOPS =
     "湘南台駅発 慶応大学行": "http://www.kanachu.co.jp/dia/diagram/timetable/cs:0000801156-1/rt:0/nid:00129893/dts:1403028000"
     "本館前発 湘南台駅行": "http://www.kanachu.co.jp/dia/diagram/timetable/cs:0000800141-1/rt:0/nid:00129986/dts:1403028000"
     "慶応大学発 湘南台駅行": "http://www.kanachu.co.jp/dia/diagram/timetable/cs:0000800141-2/rt:0/nid:00129985/dts:1403028000"
+    "綾瀬車庫発 慶応大学経由 湘南台駅行": "http://www.kanachu.co.jp/dia/diagram/timetable/cs:0000801973-22/nid:00129985"
+    "湘南台駅発 慶応大学経由 綾瀬車庫行": "http://www.kanachu.co.jp/dia/diagram/timetable/cs:0000801968-8/nid:00129985"
   "辻堂":
     "慶応大学発 辻堂駅行": "http://www.kanachu.co.jp/dia/diagram/timetable/cs:0000801121-2/rt:0/nid:00129985/dts:1403028000"
     "本館前発 辻堂駅行": "http://www.kanachu.co.jp/dia/diagram/timetable/cs:0000801121-1/rt:0/nid:00129986/dts:1403028000"
