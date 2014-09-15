@@ -1,8 +1,8 @@
 path = require 'path'
 require path.resolve 'tests', 'test_helper'
 
-assert     = require 'assert'
-bus = require path.resolve 'libs', 'sfc-bus'
+assert = require 'assert'
+bus    = require path.resolve 'libs', 'sfc-bus'
 
 describe 'sfc-bus module', ->
 
@@ -19,7 +19,7 @@ describe 'sfc-bus module', ->
 
     it 'should callback schedules of 湘南台', (done) ->
 
-      @timeout 5000
+      @timeout 10000
       bus.getScheduleOfLines '湘南台', (err, schedules) ->
         if err
           return done err
@@ -33,7 +33,7 @@ describe 'sfc-bus module', ->
 
     it 'should callback schedules of 辻堂', (done) ->
 
-      @timeout 5000
+      @timeout 10000
       bus.getScheduleOfLines '辻堂', (err, schedules) ->
         if err
           return done err
