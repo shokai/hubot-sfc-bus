@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.4",
   "description": "Hubot script for Bus Schedule at SFC (Keio University).",
-  "main": "scripts/sfc-bus.coffee",
+  "main": "scripts/hubot-sfc-bus.coffee",
   "scripts": {
     "test": "grunt test"
   },
@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "async": "*",
+    "debug": "*",
     "hubot": "*",
     "lodash": "*",
     "request": "*"
