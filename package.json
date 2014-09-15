@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "async": "*",
+    "cheerio": "*",
     "debug": "*",
     "hubot": "*",
     "lodash": "*",
