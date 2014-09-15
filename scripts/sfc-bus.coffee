@@ -44,7 +44,7 @@ getScheduleOfLines = (line, callback = ->) ->
   unless STOPS.hasOwnProperty line
     callback "#{line}、そんな名前の路線知らない"
     return
-  async.mapSeries _.keys(STOPS[line]), (name, next) ->
+  async.map _.keys(STOPS[line]), (name, next) ->
     getScheduleOfBusStop STOPS[line][name], (err, schedule) ->
       setTimeout ->
         next err, {name: name, schedule: schedule}
