@@ -28,6 +28,7 @@ describe 'sfc-bus module', ->
           assert.equal typeof schedule['name'], 'string'
           assert.equal typeof schedule['schedule'], 'object'
           assert.equal schedule['schedule'] instanceof Array, false
+          assert.equal (schedule.schedule['15']['平日'].length > 0), true
         done()
 
     it 'should callback schedules of 辻堂', (done) ->
@@ -41,4 +42,5 @@ describe 'sfc-bus module', ->
           assert.equal typeof schedule['name'], 'string'
           assert.equal typeof schedule['schedule'], 'object'
           assert.equal schedule['schedule'] instanceof Array, false
+          assert.equal (schedule.schedule['15']['平日'].length > 0), true
         done()
