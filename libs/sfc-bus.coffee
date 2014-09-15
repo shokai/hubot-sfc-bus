@@ -39,9 +39,7 @@ bus.getScheduleOfLines = (line, callback = ->) ->
     return
   async.map _.keys(bus.STOPS[line]), (name, next) ->
     bus.getScheduleOfBusStop bus.STOPS[line][name], (err, schedule) ->
-      setTimeout ->
-        next err, {name: name, schedule: schedule}
-      , 1000
+      next err, {name: name, schedule: schedule}
   , (err, res) ->
     callback err, res
 
