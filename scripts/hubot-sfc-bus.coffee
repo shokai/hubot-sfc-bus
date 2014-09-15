@@ -28,7 +28,7 @@ module.exports = (robot) ->
     arg  = msg.match[2]
 
     day = (arg.match(/(平日|休日|土曜)/) or [])[1] or Bus.getDay()
-    hour = (arg.match(/(\d+)時/) or [])[1] or new Date().getHours()
+    hour = (arg.match(/(\d+)時/) or [])[1] - 0 or new Date().getHours()
     where = (arg.match(new RegExp "(#{Object.keys(Bus.STOPS).join('|')})") or [])[1]
     unless where
       msg.send """
