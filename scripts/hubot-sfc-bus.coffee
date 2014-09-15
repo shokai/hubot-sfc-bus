@@ -20,17 +20,23 @@ Bus   = require path.join __dirname, '../libs/sfc-bus'
 debug = require('debug')('hubot-sfc-bus')
 
 module.exports = (robot) ->
-  robot.respond /(バス|bus)\s+([^\s]+)\s*(.*)/i, (msg) ->
-    where = msg.match[2]
-    who = msg.message.user.name
-    day = Bus.getDay()
-    hour = new Date().getHours()
+  robot.error (err, msg) ->
+    console.error err
 
-    for opt in msg.match[3].split(/\s+/)
-      if /(平日|休日|土曜)/.test opt
-        day = opt
-      if /\d+時/.test opt
-        hour = opt.match(/(\d+)/)[1] - 0
+  robot.respond /(バス|bus)\s+(.+)/i, (msg) ->
+    who = msg.message.user.name
+    arg  = msg.match[2]
+
+    day = (arg.match(/(平日|休日|土曜)/) or [])[1] or Bus.getDay()
+    hour = (arg.match(/(\d+)時/) or [])[1] or new Date().getHours()
+    where = (arg.match(new RegExp "(#{Object.keys(Bus.STOPS).join('|')})") or [])[1]
+    unless where
+      msg.send """
+      @#{who} #{Object.keys(Bus.STOPS).join(' ')} を指定してください
+      例 hubot バス 湘南台
+         hubot バス (湘南台|辻堂) (平日|土曜|休日) (0〜23時)
+      """
+      return
 
     msg.send "@#{who} #{day}#{hour}時 #{where}のバス時刻表について調べます"
 
